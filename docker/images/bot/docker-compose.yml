@@ -5,3 +5,12 @@ services:
     image: squirrelnet/nebula:latest
     build:
       context: alpine
+      args:
+        VERSION: alpine
+
+  v37:
+    image: squirrelnet/nebula:3.7-alpine
+    build:
+      context: alpine
+      args:
+        VERSION: 3.7-alpine

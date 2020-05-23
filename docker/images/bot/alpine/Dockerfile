@@ -1,4 +1,6 @@
-FROM python:alpine
+ARG VERSION
+
+FROM python:${VERSION}
 
 RUN apk add --no-cache \
             build-base \
